@@ -86,11 +86,17 @@ public class MainActivity extends AppCompatActivity {
 
 
     //@Override
-    public boolean onOptionItemSelected(MenuItem item) {
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
         Intent infoIntent = new Intent(this, InfoActivity.class);
         startActivity(infoIntent);
         return super.onOptionsItemSelected(item);
     }
+
+
+
+
 
 
     private void addCandiesToDatabase(Candy[] candies) {
