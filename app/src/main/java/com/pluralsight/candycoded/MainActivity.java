@@ -85,12 +85,14 @@ public class MainActivity extends AppCompatActivity {
     // ***
 
 
-    @Override
+    //@Override
     public boolean onOptionItemSelected(MenuItem item) {
         Intent infoIntent = new Intent(this, InfoActivity.class);
         startActivity(infoIntent);
         return super.onOptionsItemSelected(item);
     }
+
+
     private void addCandiesToDatabase(Candy[] candies) {
         SQLiteDatabase db = candyDbHelper.getWritableDatabase();
 
